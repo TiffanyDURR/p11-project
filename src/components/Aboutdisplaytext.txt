@@ -1,0 +1,23 @@
+  // const [data, setData] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [err, setErr] = useState(false);
+  // useEffect(() => {
+  //   setIsLoading(true);
+  //   axios
+  //     .get("data.json")
+  //     .then((res) => {
+  //       setData(res.data);
+  //       setIsLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       setErr("Ouppsss");
+  //       setIsLoading(false);
+  //     });
+  // }, []);
+
+  // if (isLoading) return <div>Chargement...</div>;
+
+  // if (err) return <div>{err}</div>;
+
+
+

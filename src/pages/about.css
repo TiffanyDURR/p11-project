@@ -1,0 +1,42 @@
+.about-content {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 240px;
+}
+
+.about-content .title {
+  background-color: #ff6060;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+}
+
+.about-content .title i {
+  cursor: pointer;
+}
+
+.about-content .content {
+  background-color: #f6f6f6;
+  padding: 20px;
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ff6060;
+  margin-bottom: 40px;
+}
+
+.fiabilite,
+.respect,
+.service,
+.responsabilite {
+  margin-bottom: 40px;
+}

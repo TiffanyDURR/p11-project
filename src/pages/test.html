@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <i class="fas fa-chevron-left"></i>
+      <div class="pic-container">
+        <img src="${card.pictures[0]}" alt="Image de ${card.title}" />
+      </div>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div class="page-header">
+      <div>
+        <h1>${card.title}</h1>
+        <span class="loc">${card.location}</span>
+      </div>
+      <div>
+        <div class="author">
+          <span class="nom">${card.host.name}</span>
+          <span class="thumb-name"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="infos">
+      <div class="tags">${card.tags}</div>
+      <div class="rating">${card.rating}</div>
+    </div>
+    <div class="section">
+      <div class="description">
+        <div class="h-des">
+          <span>Description</span>
+          <span
+            ><i className="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-up"></i
+          ></span>
+        </div>
+        <div class="cont-des"></div>
+      </div>
+      <div class="equipements">
+        <div class="h-equ">
+          <span>Équipements</span>
+          <span
+            ><i className="fas fa-chevron-down"></i>
+            <i className="fas fa-chevron-up"></i
+          ></span>
+        </div>
+        <div class="cont-equ"></div>
+      </div>
+    </div>
+  </body>
+</html>

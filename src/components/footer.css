@@ -1,0 +1,19 @@
+footer {
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  padding: 68px;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer img {
+  height: 38px;
+}
+
+footer span {
+  display: block;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
