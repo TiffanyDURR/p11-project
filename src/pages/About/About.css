@@ -5,7 +5,12 @@
   margin-bottom: 240px;
 }
 
-.about-content .title {
+.about-content .description {
+  width: 100%;
+  min-width: 320px;
+}
+
+.about-content .titledes {
   background-color: #ff6060;
   font-weight: 500;
   font-size: 24px;
@@ -17,13 +22,14 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 4px;
+  margin-top: 40px;
 }
 
-.about-content .title i {
+.about-content .titledes i {
   cursor: pointer;
 }
 
-.about-content .content {
+.about-content .contentdes {
   background-color: #f6f6f6;
   padding: 20px;
   line-height: 1.8;
@@ -34,16 +40,9 @@
   margin-bottom: 40px;
 }
 
-.fiabilite,
-.respect,
-.service,
-.responsabilite {
-  margin-bottom: 40px;
-}
-
 @media only screen and (min-width: 1px) and (max-width: 1280px) {
-  .about-content .content,
-  .about-content .title {
+  .about-content .contentdes,
+  .about-content .titledes {
     font-size: 18px;
   }
 }

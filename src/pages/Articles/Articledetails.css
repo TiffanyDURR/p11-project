@@ -90,8 +90,7 @@
   width: 48%;
 }
 
-.titledes,
-.h-equ {
+.article-drpdwn .titledes {
   background-color: #ff6060;
   color: #ffffff;
   font-size: 18px;
@@ -107,8 +106,7 @@
   margin-top: 24px;
 }
 
-.cont-equ,
-.contentdes {
+.article-drpdwn .contentdes {
   background-color: #f6f6f6;
   padding: 24px;
   line-height: 1.8;

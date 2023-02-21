@@ -73,9 +73,8 @@ const Articledetails = ({ locationArray, isLoading }) => {
             <div className="tags">{card.tags[0]}</div>
             <Rating count={card.rating} />
           </div>
-          <div className="section">
+          <div className="section article-drpdwn">
             <DropDown title="Description" content={card.description} />
-
             <DropDown title="Équipements" content={equipmentsData} />
           </div>
         </div>
