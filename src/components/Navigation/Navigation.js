@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logoIMG from "./logo-img.png";
 
 const Navigation = () => {
   return (
@@ -7,10 +8,7 @@ const Navigation = () => {
       <nav>
         <NavLink to="/">
           <div className="logo">
-            <img
-              src="https://www.creapiks.net/Cours/logo-kasa.png"
-              alt="Logo Kasa"
-            />
+            <img src={logoIMG} alt="logo Kasa"></img>
           </div>
         </NavLink>
         <ul>

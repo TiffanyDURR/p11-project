@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer/Footer";
-import Rating from "./Rating";
+import Navigation from "../../components/Navigation/Navigation";
+import Footer from "../../components/Footer/Footer";
+import Rating from "./../Rating";
 import "./Articledetails.css";
-import DropDown from "./Dropdown";
+import DropDown from "../../components/Dropdown";
 
 const Articledetails = ({ locationArray, isLoading }) => {
   const params = useParams();
@@ -74,9 +74,9 @@ const Articledetails = ({ locationArray, isLoading }) => {
             <Rating count={card.rating} />
           </div>
           <div className="section">
-            <DropDown titledes="Description" contentdes={card.description} />
+            <DropDown title="Description" content={card.description} />
 
-            <DropDown titledes="Équipements" contentdes={equipmentsData} />
+            <DropDown title="Équipements" content={equipmentsData} />
           </div>
         </div>
       </div>

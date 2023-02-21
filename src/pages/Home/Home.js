@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../../components/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 import Cards from "../../components/Cards/Cards";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";

@@ -1,24 +1,5 @@
-import React, { useState } from "react";
-
-function DropDown(props) {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div className="fiabilite">
-      <div
-        className="title"
-        onClick={() => {
-          setIsOpen((prevState) => {
-            return !prevState;
-          });
-        }}
-      >
-        <span>{props.title}</span>
-        <button className="fas fa-chevron-down"></button>
-      </div>
-      {isOpen && <div className="content">{props.content}</div>}
-    </div>
-  );
-}
+import React from "react";
+import DropDown from "./Dropdown";
 
 const Aboutcontent = () => {
   return (

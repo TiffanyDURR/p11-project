@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import Errorcontent from "../components/Error/Errorcontent";
-import Navigation from "../components/Navigation";
+import Navigation from "../components/Navigation/Navigation";
 
 const Errorpage = () => {
   return (
@@ -9,7 +9,6 @@ const Errorpage = () => {
       {" "}
       <div className="body-content">
         <Navigation></Navigation>
-
         <Errorcontent></Errorcontent>
       </div>
       <Footer></Footer>

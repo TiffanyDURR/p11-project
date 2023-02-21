@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
-import Articledetails from "./pages/Articledetails";
+import About from "./pages/About/About";
+import Articledetails from "./pages/Articles/Articledetails";
 import Errorpage from "./pages/Errorpage";
 import Home from "./pages/Home/Home";
 

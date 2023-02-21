@@ -12,13 +12,13 @@ function DropDown(props) {
           });
         }}
       >
-        <span>{props.titledes}</span>
+        <span>{props.title}</span>
         <button
           className="fas fa-chevron-down"
           style={{ transform: isOpen && "rotate(180deg)" }}
         ></button>
       </div>
-      {isOpen && <div className="contentdes">{props.contentdes}</div>}
+      {isOpen && <div className="contentdes">{props.content}</div>}
     </div>
   );
 }
