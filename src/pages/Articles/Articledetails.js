@@ -30,8 +30,8 @@ const Articledetails = ({ locationArray, isLoading }) => {
     return null;
   }
 
-  let equipmentsData = card.equipments.map((card) => (
-    <span key={card}>{card}</span>
+  let equipmentsData = card.equipments.map((equipment) => (
+    <span key={equipment}>{equipment}</span>
   ));
 
   return (

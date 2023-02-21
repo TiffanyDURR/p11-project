@@ -10,7 +10,7 @@ const About = () => {
       <div className="body-content">
         <Navigation></Navigation>
         <div className="baner">
-          <img src="assets/about-image.jpeg" alt=""></img>
+          <img src="assets/about-image.jpeg" alt="a propos"></img>
         </div>
         <Aboutcontent></Aboutcontent>{" "}
       </div>
