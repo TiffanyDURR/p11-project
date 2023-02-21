@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import Rating from "./Rating";
-import "./page.css";
+import "./Articledetails.css";
 
 const Articledetails = ({ locationArray, isLoading }) => {
   const params = useParams();
@@ -43,7 +43,7 @@ const Articledetails = ({ locationArray, isLoading }) => {
           }}
         >
           <span>{props.titledes}</span>
-          <i className="fas fa-chevron-down"></i>
+          <button className="fas fa-chevron-down"></button>
         </div>
         {isOpen && <div className="contentdes">{props.contentdes}</div>}
       </div>
@@ -60,11 +60,17 @@ const Articledetails = ({ locationArray, isLoading }) => {
         <Navigation></Navigation>
         <div className="page-content">
           <div className="carousel">
-            <i className="fas fa-chevron-left" onClick={prevSlide}></i>
+            <button
+              className="fas fa-chevron-left"
+              onClick={prevSlide}
+            ></button>
             <div className="pic-container">
               <img src={card.pictures[current]} alt={card.title}></img>
             </div>
-            <i className="fas fa-chevron-right" onClick={nextSlide}></i>
+            <button
+              className="fas fa-chevron-right"
+              onClick={nextSlide}
+            ></button>
           </div>
 
           <div className="page-header">

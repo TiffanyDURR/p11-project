@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Cards.css";
 
 const Cards = ({ locationArray }) => {
   return (

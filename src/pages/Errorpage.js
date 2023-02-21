@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Errorcontent from "../components/Errorcontent";
+import Footer from "../components/Footer/Footer";
+import Errorcontent from "../components/Error/Errorcontent";
 import Navigation from "../components/Navigation";
 
 const Errorpage = () => {

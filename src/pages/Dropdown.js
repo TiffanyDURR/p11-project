@@ -13,7 +13,7 @@ const Dropdown = () => {
           }}
         >
           <span>{props.titledes}</span>
-          <i className="fas fa-chevron-down"></i>
+          <button className="fas fa-chevron-down"></button>
         </div>
         {isOpen && <div className="contentdes">{props.contentdes}</div>}
       </div>

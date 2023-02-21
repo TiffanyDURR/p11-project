@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 
 const Slider = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("data.json").then((res) => setData(res.data));
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+      });
   }, []);
   return (
     <div className="cards">

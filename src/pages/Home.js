@@ -1,8 +1,8 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Cards from "../components/Cards";
-import Footer from "../components/Footer";
-import "./navigation.css";
+import Cards from "../components/Cards/Cards";
+import Footer from "../components/Footer/Footer";
+import "./Home.css";
 import bannerImg from "./home-image copy.jpeg";
 
 const Home = ({ locationArray }) => {
