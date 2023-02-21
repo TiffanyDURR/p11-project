@@ -16,7 +16,6 @@ const Articledetails = ({ locationArray, isLoading }) => {
   if (!card) return <Navigate to="/404" />;
 
   const sliderData = card.pictures;
-
   const length = sliderData.length;
 
   const nextSlide = () => {
