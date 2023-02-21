@@ -26,9 +26,7 @@ const Articledetails = ({ locationArray, isLoading }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(sliderData) || sliderData.length <= 0) {
-    return null;
-  }
+  console.log(current);
 
   let equipmentsData = card.equipments.map((equipment) => (
     <span key={equipment}>{equipment}</span>
