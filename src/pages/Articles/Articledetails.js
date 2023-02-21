@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
-import Rating from "./../Rating";
+import Rating from "../../components/Rating";
 import "./Articledetails.css";
 import DropDown from "../../components/Dropdown";
 
