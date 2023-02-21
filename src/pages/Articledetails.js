@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer/Footer";
 import Rating from "./Rating";
 import "./Articledetails.css";
+import DropDown from "./Dropdown";
 
 const Articledetails = ({ locationArray, isLoading }) => {
   const params = useParams();
@@ -28,26 +29,6 @@ const Articledetails = ({ locationArray, isLoading }) => {
 
   if (!Array.isArray(sliderData) || sliderData.length <= 0) {
     return null;
-  }
-
-  function DropDown(props) {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-      <div className="description">
-        <div
-          className="titledes"
-          onClick={() => {
-            setIsOpen((prevState) => {
-              return !prevState;
-            });
-          }}
-        >
-          <span>{props.titledes}</span>
-          <button className="fas fa-chevron-down"></button>
-        </div>
-        {isOpen && <div className="contentdes">{props.contentdes}</div>}
-      </div>
-    );
   }
 
   let equipmentsData = card.equipments.map((card) => (
@@ -93,15 +74,9 @@ const Articledetails = ({ locationArray, isLoading }) => {
             <Rating count={card.rating} />
           </div>
           <div className="section">
-            <DropDown
-              titledes="Description"
-              contentdes={card.description}
-            ></DropDown>
+            <DropDown titledes="Description" contentdes={card.description} />
 
-            <DropDown
-              titledes="Équipements"
-              contentdes={equipmentsData}
-            ></DropDown>
+            <DropDown titledes="Équipements" contentdes={equipmentsData} />
           </div>
         </div>
       </div>
